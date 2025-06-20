@@ -1,0 +1,451 @@
+.hero-section {
+  background: linear-gradient(to bottom right, #76dacd, #efdbdd);
+  color: #212121;
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.hero-section h1 {
+  color: #ef747c;
+}
+
+.hero-section .btn-primary {
+  background-color: #ef747c;
+  border: none;
+}
+
+.hero-section .btn-primary:hover {
+  background-color: #efacb7;
+}
+
+/* Floating Animation */
+.floating-photo {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Original image shape, no border or radius */
+.hero-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: none;
+  border-radius: 0; /* removes ellipse/rounding */
+  box-shadow: none;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* uniform space between icons */
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fdfffd; /* light background circle */
+  font-size: 1.5rem;
+  color: #212121;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.social-icons a:hover {
+  background: #ef747c; /* your accent color */
+  color: #fdfffd;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+/* footer section */
+
+.footer-section {
+  background-color: #ef747c;
+  color: #fff;
+}
+
+.footer-section .social-icons a {
+  color: #fff;
+}
+
+.footer-section .social-icons a:hover {
+  color: #fdfffd;
+}
+.tooltip-inner {
+  background-color: #ef747c; /* Match your palette */
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: #ef747c;
+}
+
+/* .about-section */
+
+.about-section {
+  background: linear-gradient(to bottom right, #76dacd, #efdbdd); /* soft accent background */
+  color: #212121;
+   min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about-section h2 {
+  color: #ef747c; /* accent title */
+}
+
+.about-section .btn-primary {
+  background-color: #ef747c;
+  border: none;
+}
+
+.about-section .btn-primary:hover {
+  background-color: #efacb7;
+}
+
+.about-section .btn-outline-primary {
+  color: #ef747c;
+  border: 2px solid #ef747c;
+}
+
+.about-section .btn-outline-primary:hover {
+  background-color: #efacb7;
+  color: #fff;
+  border-color: #efacb7;
+}
+
+
+/* .education-section */
+
+
+
+.education-section {
+  background: linear-gradient(to bottom right, #76dacd, #efdbdd); /* soft accent background */
+  color: #212121;
+   min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.education-section h2 {
+  color: #ef747c;
+  border-bottom: 2px solid #efacb7;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.edu-timeline {
+  position: relative;
+  padding-left: 30px;
+  border-left: 3px solid #76dacd;
+}
+
+.edu-timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.edu-dot {
+  position: absolute;
+  left: -9px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background-color: #ef747c;
+  border-radius: 50%;
+  border: 2px solid #fdfffd;
+}
+
+.edu-content {
+  padding-left: 10px;
+}
+
+.text-highlight {
+  color: #efacb7;
+}
+
+.edu-year {
+  float: right;
+  color: #ef747c;
+  font-weight: normal;
+}
+
+.edu-content p strong {
+  color: #ef747c;
+}
+ /* .projects-section */
+ .projects-section {
+  background: linear-gradient(to bottom right, #76dacd, #efdbdd); /* soft accent background */
+  color: #212121;
+   min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.projects-scroll-wrapper {
+  position: relative;
+}
+
+.projects-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.project-item {
+  min-width: 320px;
+  max-width: 320px;
+  flex: 0 0 auto;
+  background: #efdbdd;
+  border-radius: 12px;
+  scroll-snap-align: start;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+/* Hide default scrollbar */
+.projects-scroll::-webkit-scrollbar {
+  display: none;
+}
+.projects-scroll {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Scroll arrow buttons */
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: #fdfffd;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #76dacd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.scroll-arrow:hover {
+  background: #ef747c;
+  color: #fdfffd;
+}
+
+.scroll-arrow.left {
+  left: -20px;
+}
+
+.scroll-arrow.right {
+  right: -20px;
+}
+
+/* Skills Section */
+.skills-section {
+  background: linear-gradient(to bottom right, #76dacd, #efdbdd);
+  color: #212121;
+  min-height: 100vh;
+  padding-top: 120px;   /* generous top padding */
+  padding-bottom: 120px; /* generous bottom padding */
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.skills-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  margin-bottom: 2rem;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* center the grid */
+  gap: 1.5rem;
+}
+
+.skill-item {
+  width: 120px;
+  height: 120px;
+  background: #efdbdd;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #212121;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item i {
+  font-size: 2rem;
+  color: #76dacd;
+  margin-bottom: 0.5rem;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(127, 218, 220, 0.6);
+  color: #ef747c;
+}
+
+.skill-item:hover i {
+  color: #ef747c;
+}
+
+
+
+/* Contact Section */
+
+
+.contact-section {
+  background: linear-gradient(to bottom right, #76dacd, #efdbdd); /* soft accent background */
+  color: #212121;
+  padding :3rm 2rm;
+   /* min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 80px; */
+}
+
+.section-title {
+  text-align: center;
+  color: #ef747c;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-details {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  color: #212121;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link i {
+  min-width: 24px;
+  color: #76dacd;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #ef747c; /* accent color on hover */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contact-link:hover i {
+  color: #ef747c;
+}
+
+
+
+
+
+
+
+/* .hero-section {
+  background: linear-gradient(to bottom right, #76dacd, #efdbdd);
+  color: #212121;
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about-section {
+  background-color: #fdfffd;
+  color: #212121;
+  padding: 80px 0;
+}
+
+.skills-section {
+  background-color: #efdbdd;
+  color: #212121;
+  padding: 80px 0;
+}
+
+.projects-section {
+  background-color: #efacb7;
+  color: #212121;
+  padding: 80px 0;
+}
+
+.education-section {
+  background-color: #76dacd;
+  color: #212121;
+  padding: 80px 0;
+}
+
+.contact-section {
+  background-color: #ef747c;
+  color: #ffffff;
+  padding: 80px 0;
+}
+
+/* Buttons (general style matching palette) */
+/* .btn-primary {
+  background-color: #ef747c;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #efacb7;
+}
+
+/* Project buttons */
+/* .btn-outline-primary {
+  border-color: #212121;
+  color: #212121;
+}
+
+.btn-outline-primary:hover {
+  background-color: #212121;
+  color: #fdfffd;
+} */
